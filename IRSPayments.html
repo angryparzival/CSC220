@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset = "UTF-8">
+    <!-- Author: Ryan Burchette 
+        Date: 2/7/2024
+        Purpose: webpage to "pay" irs payments (fake)
+    -->
+
+    <!--Tab Favicon of masked man-->
+    <link rel = "icon" href = "./Pics/FaviconThief.png">
+
+    <title>ScamsRUs</title>  
+
+    <body>
+        <!--Table to allow user to put in information of their payments -->
+        <table border =1 align = center>
+            <caption><b><i>Insert IRS Info Here</i></b></caption>
+            <tr>
+                <!--all table header options-->
+                <th>First Name </th>
+                <th>Last Name</th>
+                <th>DOB</th>
+                <th>Owed Amount</th>
+                <th>Last 4 digits of SSN </th>
+                <th></th>
+            </tr>
+            <tr>
+                <!--all table data points as inputs from user-->
+                <td><input type="text" name="firstName"></td>
+                <td><input type="text" name="lastName"></td>
+                <td><input type="date" name="DOB"></td>
+                <td><input type="number" name="owedAmount"></td>
+                <td><input type="password" name="SSN" maxlength="4"></td>
+                <!--button to submit information-->
+                <td><button type = "button">Submit</button></td>
+            </tr>
+        </table>
+    </body>
+</html>

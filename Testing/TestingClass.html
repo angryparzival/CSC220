@@ -9,25 +9,44 @@
     <title>My First Form</title>  <!-- this is the title that will show on the tab -->
 
     <body>
-        <img src="../Pics/FaviconThief.png" alt="hahafuni">
+        <img src="../Pics/FaviconThief.png" alt="hahafuni" height = "100px" width = "100px" style="float:left";>
         <form>
             <label for ="FirstName">First name</label>
             <input type="textbox" id="FirstName">
             <br>Last name<input type="text">
-            <br>D.B <input type="date"> Favorite Color <input type="text">
+            <br>D.B <input type="date"> Favorite Color <input type="color">
 
-            <fieldset>
-                <br>Major:
-                <label for="CS_ID">CS</label> 
-                <input type ="radio" value="CS" id="CS_ID">
-                <label for="CB_ID">CB</label>
-                <input type ="radio" value ="CB" id="CB_ID">
-                <label for="IT">IT</label>
-                <input type="radio" value = "IT" id ="IT_ID">
+            <fieldset id = "majors">
+                <legend>Major:</legend>
+                <label for="CS_Major">CS</label> 
+                <input type ="radio" name =="radCS" id="CS_Major">
+                <label for="CB_Major">CB</label>
+                <input type ="radio" name ="radCB" id="CB_Major">
+                <label for="IT_Major">IT</label>
+                <input type="radio" name = "radIT" id ="IT_Major">
             </fieldset>
-            <br>Minor
+            <fieldset id = "minors">
+                <legend>Minor:</legend>
+                <label for="CS_Minor">CS</label> 
+                <input type ="radio" name =="radCS_Minor" id="CS_Minor">
+                <label for="CB_Minor">CB</label>
+                <input type ="radio" name ="radCB_Minor" id="CB_Minor">
+                <label for="IT_Minor">IT</label>
+                <input type="radio" name = "radIT_Minor" id ="IT_Minor">
+            </fieldset id = "classes">
+            <fieldset>
+                <legend> Select the class you have completed:</legend>
+                <label for = "CSC141">CSC141</label>
+                <input type="checkbox" name="chkClass" id = "CSC241">
+                <label for = "CSC241">CSC241</label>
+                <input type="checkbox" name="chkClass" id = "CSC241">
+                <label for = "CSC150">CSC150</label>
+                <input type="checkbox" name="chkClass" id = "CSC150">
+                <label for = "CSC250">CSC250</label>
+                <input type="checkbox" name="chkClass" id = "CSC250">
+            </fieldset>
         </form>
-
+        <audio>Let's Listen to this</audio>
         
     </body>
 

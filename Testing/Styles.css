@@ -4,8 +4,24 @@ p{
     color: #FF99CC;
     text-align: center;
 }
+
+/*
 body{
     background-image: url("../Pics/FaviconThief.png");
     background-size: 88%;
     background-repeat: no-repeat;
+}*/
+
+header{
+    background-image: url("../Pics/FaviconThief.png");
+}
+
+button{
+    transition-duration: 3ms;
+    background-color: #FF99CC;
+}
+
+button:hover{
+    background-color:  greenyellow;
+    color: blue;
 }

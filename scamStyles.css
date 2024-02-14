@@ -1,5 +1,5 @@
 /*Styling for the table info, headers and inputs*/
-td, th, input, a:link, a:visited{
+td, th, input, a:link, a:visited, button{
     color: rgb(31,194,14);
     /*background-color: rgb(78, 20, 177);*/
     background-color: rgb(0, 0, 0);

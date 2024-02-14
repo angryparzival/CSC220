@@ -1,4 +1,4 @@
-/*Styling for the table info, headers and inputs*/
+/*Styling for the table info, headers, inputs, links and button*/
 td, th, input, a:link, a:visited, button{
     color: rgb(31,194,14);
     /*background-color: rgb(78, 20, 177);*/
@@ -7,6 +7,7 @@ td, th, input, a:link, a:visited, button{
     font-size: 10pt;
     text-align: center;
 }
+/*styling for when hovering over link*/
 a:hover{
     color: red;
 }

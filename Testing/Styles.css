@@ -4,3 +4,8 @@ p{
     color: #FF99CC;
     text-align: center;
 }
+body{
+    background-image: url("../Pics/FaviconThief.png");
+    background-size: 88%;
+    background-repeat: no-repeat;
+}

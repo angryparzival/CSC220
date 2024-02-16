@@ -25,3 +25,9 @@ button:hover{
     background-color:  greenyellow;
     color: blue;
 }
+
+img{
+    float: left;
+    height: 100px;
+    width:100px;
+}

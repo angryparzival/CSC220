@@ -31,3 +31,22 @@ img{
     height: 100px;
     width:100px;
 }
+
+/*code for grid layout*/
+#myFormGrid{
+    display:grid;
+    grid-template-columns: 50% 50%;
+}
+
+#myFormGrid > div {
+    background-color: darkviolet;
+}
+
+#formGrid2{
+    display:grid;
+    grid-template-columns: 50% 50%;
+}
+
+#formGrid2 > div {
+    background-color: blue;
+}

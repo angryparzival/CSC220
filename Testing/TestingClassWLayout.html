@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset = "UTF-8">
+    <!-- Author:
+        Date:
+        Purpose:
+    -->
+    <!-- this is a comment and is ignored by the browser -->
+    <title>My First Form</title>  <!-- this is the title that will show on the tab -->
+
+    <link href="Styles.css" rel="stylesheet">
+
+    <body>
+        <form>
+            <div id="myFormGrid">
+                <div>
+                    <img src="../Pics/FaviconThief.png" alt="hahafuni">
+                </div>
+                <div>
+                    <label for ="FirstName">First name</label>
+                    <input type="textbox" id="FirstName"><br>
+                    <div id="formGrid2">
+                        <div>
+                            <label for="lastName">Last name</label>
+                            <input type="text" id="lastName"><br>
+                        </div>
+                        <div>test</div>
+                        <div>test</div>
+                        <div>test</div>
+                        
+                    </div>
+                    <label for="DOB">DOB </label><input type="date" id="DOB">
+                </div>
+                <div>
+                    <label for="favColor">Favorite Color </label><input type="color" id="favColor">
+                    <fieldset id = "majors">
+                        <legend>Major:</legend>
+                        <label for="CS_Major">CS</label> 
+                        <input type ="radio" name =="radCS" id="CS_Major">
+                        <label for="CB_Major">CB</label>
+                        <input type ="radio" name ="radCB" id="CB_Major">
+                        <label for="IT_Major">IT</label>
+                        <input type="radio" name = "radIT" id ="IT_Major">
+                    </fieldset>
+                    <fieldset id = "minors">
+                        <legend>Minor:</legend>
+                        <label for="CS_Minor">CS</label> 
+                        <input type ="radio" name =="radCS_Minor" id="CS_Minor">
+                        <label for="CB_Minor">CB</label>
+                        <input type ="radio" name ="radCB_Minor" id="CB_Minor">
+                        <label for="IT_Minor">IT</label>
+                        <input type="radio" name = "radIT_Minor" id ="IT_Minor">
+                    </fieldset>
+                </div>
+                <div>
+                    <fieldset  id = "classes">
+                        <legend> Select the class you have completed:</legend>
+                        <label for = "CSC141">CSC141</label>
+                        <input type="checkbox" name="chkClass" id = "CSC141">
+                        <label for = "CSC150">CSC150</label>
+                        <input type="checkbox" name="chkClass" id = "CSC150"><br>
+                        <label for = "CSC241">CSC241</label>
+                        <input type="checkbox" name="chkClass" id = "CSC241">
+                        <label for = "CSC250">CSC250</label>
+                        <input type="checkbox" name="chkClass" id = "CSC250"><br>
+                        <label for = "CSC3410">CSC341</label>
+                        <input type="checkbox" name="chkClass" id = "CSC341">
+                        <label for = "CSC350">CSC350</label>
+                        <input type="checkbox" name="chkClass" id = "CSC350">
+                    </fieldset>
+                </div>
+            </div>
+        </form>
+    </body>
+    <!-- each element needs an ending tag -->
+</html>

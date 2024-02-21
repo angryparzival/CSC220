@@ -35,7 +35,7 @@ img{
 /*code for grid layout*/
 #myFormGrid{
     display:grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 20% 30%;
 }
 
 #myFormGrid > div {
@@ -44,7 +44,7 @@ img{
 
 #formGrid2{
     display:grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 25% 50%;
 }
 
 #formGrid2 > div {

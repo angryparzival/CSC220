@@ -46,5 +46,34 @@ function getNumber(){
         console.log("you guessed to low")
     }
 }
+function getUserName(){
+    let name;
+    name = document.getElementById("UserName").value;
+    console.log(name);
+    return name;
+}
+function getPassword(){
+    let password;
+    password = document.getElementById("Password").value;
+    console.log(password);
+    return password;
+}
+function login(){
+    let userName = getUserName();
+    let password = getPassword();
+    if (userName == "Dorian" && "dominos"){
+        console.log("Congrats you got in");
+        window.open("TestingClass.html")
+    }
+    else{
+        console.log("You are denied");
+    }
+}
+
+let stringName;
+stringName = getUserName();
+console.log("The name is " + stringName);
+
+
 //this is a function call
 doesWorkPrompt();

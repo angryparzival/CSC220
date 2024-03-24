@@ -2,19 +2,62 @@
 <html lang="en">
     <meta charset = "UTF-8">
     <!-- Author: Ryan Burchette 
-        Date: 2/7/2024
-        Purpose: Web page to show options of interested single moms (fake)
+        Date: 3/24/2024
+        Purpose: Web page to show mom(fake)
     -->
 
     <!--Tab Favicon of masked man-->
     <link rel = "icon" href = "./Pics/FaviconThief.png">
+    <!--Stylesheet to style page-->
+    <link rel = "stylesheet" href = "momStyles.css">
+    <!--link to javascript file-->
+    <script src = "../javaScam.js"></script>
 
     <title>ScamsRUs</title>  
 
-    <!--stylesheet to style page-->
-    <!--<link href="../scamStyles.css" rel ="stylesheet">-->
-
     <body>
-        <img src="../Pics/SusanMomPic.jpg" alt="pic of mom Susan">
+        <!--making a grid box layout-->
+        <div id="momGrid">
+
+            <!--Top Left grid. Picture of mom-->
+            <div>
+                <img src="../Pics/SusanMomPic.jpg" alt="pic of mom Karen" height="100%">
+            </div>
+
+            <!--Top right grid. List of traits, likes and dislikes-->
+            <div>
+                <ul>
+                    <li>Age: 44</li>
+                    <li>Height:5'7"</li>
+                    <li>Eyes: Green</li>
+                    <li>Hair Color: Blonde</li>
+                    <li>Location: 1.6 miles from you</li>
+                    <br>
+                    <li>Likes:</li>
+                        <ol>
+                            <li>Money</li>
+                            <li>Yelling at retail workers</li>
+                            <li>Pilates</li>
+                            <li>Younger Men</li>
+                        </ol>
+                    <li>Dislikes:</li>
+                    <ol>
+                        <li>Animals</li>
+                        <li>Older Men</li>
+                        <li>Unclean Places</li>
+                    </ol>
+                </ul>
+            </div>
+
+            <!--Bottom left grid-->
+            <div>
+                <!--button that goes back to mom options-->
+                <a href="../MomOptions.html">
+                    <button>Go Back</button>
+                </a>
+                <!--Button that gets user card info-->
+                <button type="button" onclick="getCardInfo()"><b>Click here to pay and contact</b></button>
+            </div>
+        </div>
     </body>
 </html>

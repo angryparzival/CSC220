@@ -2,19 +2,62 @@
 <html lang="en">
     <meta charset = "UTF-8">
     <!-- Author: Ryan Burchette 
-        Date: 2/7/2024
-        Purpose: Web page to show options of interested single moms (fake)
+        Date: 3/24/2024
+        Purpose: Web page to show mom (fake)
     -->
 
     <!--Tab Favicon of masked man-->
     <link rel = "icon" href = "./Pics/FaviconThief.png">
+    <!--Stylesheet to style page-->
+    <link rel = "stylesheet" href = "momStyles.css">
+    <!--link to javascript file-->
+    <script src = "../javaScam.js"></script>
 
     <title>ScamsRUs</title>  
 
-    <!--stylesheet to style page-->
-    <!--<link href="../scamStyles.css" rel ="stylesheet">-->
-
     <body>
-        <img src="../Pics/KarenMomPic.jpg" alt="pic of mom Karen">
+        <!--making a grid box layout-->
+        <div id="momGrid">
+
+            <!--Top Left grid. Picture of mom-->
+            <div>
+                <img src="../Pics/KarenMomPic.jpg" alt="pic of mom Karen" height="100%">
+            </div>
+            
+            <!--Top right grid. List of traits, likes and dislikes-->
+            <div>
+                <ul>
+                    <li>Age: 34</li>
+                    <li>Height:5'2"</li>
+                    <li>Eyes:  Brown</li>
+                    <li>Hair Color: Brown</li>
+                    <li>Location: 2.7 miles from you</li>
+                    <br>
+                    <li>Likes:</li>
+                        <ol>
+                            <li>Short walks on the beach</li>
+                            <li>Reading romance stories about men with long hair</li>
+                            <li>Cute Cats</li>
+                            <li>Tomato soup with Saltine Crackers</li>
+                        </ol>
+                    <li>Dislikes:</li>
+                    <ol>
+                        <li>Dogs</li>
+                        <li>Spicy Food</li>
+                        <li>Non-Romance Books</li>
+                    </ol>
+                </ul>
+            </div>
+
+            <!--Bottom left grid-->
+            <div>
+                <!--button that goes back to mom options-->
+                <a href="../MomOptions.html">
+                    <button>Go Back</button>
+                </a>
+                <!--Button that gets user card info-->
+                <button type="button" onclick="getCardInfo()"><b>Click here to pay and contact</b></button>
+            </div>
+        </div>
     </body>
 </html>

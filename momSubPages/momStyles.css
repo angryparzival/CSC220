@@ -1,0 +1,21 @@
+#momGrid{
+    display: grid;
+    grid-template-columns: 45% 45%;
+    grid-template-rows: auto auto;
+}
+body{
+    background-image: url(../Pics/heartBackground.jpg);
+}
+
+div{
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+ul{
+    background-color: azure;
+}
+
+button:hover{
+    background-color: green;
+}

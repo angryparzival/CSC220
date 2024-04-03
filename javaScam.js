@@ -20,7 +20,7 @@ function getInfo(){
         }
         //checks if input is 16 chars long exactly
         if(cardNum.length < 16 || cardNum.length > 16){
-            window.alert("The number you entered does not mean the length requirement");
+            window.alert("The number you entered does not meet the length requirement");
             lengthGood = false;
         }
     }while(charsGood == false || lengthGood == false);

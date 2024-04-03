@@ -50,6 +50,11 @@ function getInfo(){
         if(cardExp.length < 7 || cardExp.length > 7){
             lengthGood = false;
         }
+        //checks to see if the input matches the correct format with a / between month and year
+        if(cardExp.charAt(2) != '/')
+        {
+            alert("Please make sure that the input matches the format");
+        }
     }while(lengthGood == false);
 }
 

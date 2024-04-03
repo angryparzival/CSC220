@@ -3,9 +3,10 @@
     grid-template-columns: 45% 45%;
     grid-template-rows: auto auto;
 }
-body{
+/*body{
     background-image: url(../Pics/heartbackground.jpg);
 }
+*/
 
 div{
     font-size: 25px;

@@ -13,6 +13,7 @@
 
     <!--stylesheet to style page-->
     <link href="scamStyles.css" rel ="stylesheet">
+    <script src="javaScam.js"></script>
 
     <body>
         <!--table of all nigerian prince options-->
@@ -31,31 +32,34 @@
                 <td>Adele</td>
                 <td>11/13/1893</td>
                 <!--link to specific info about prince-->
-                <td><i><b><a href ="NigerianPrinces.html" target ="_blank">Click Here</a></b></i></td>
+                <td><input type="radio" id="Adele" name="princes" value ="Adele"></td>
             </tr>
             <tr>
                 <td>Alfred</td>
                 <td>Achebe</td>
                 <td>5/14/1941</td>
                 <!--link to specific info about prince-->
-                <td><i><b><a href ="NigerianPrinces.html" target ="_blank">Click Here</a></b></i></td>
+                <td><input type="radio" id="Achebe" name="princes" value="Adele"></td>
             </tr>
             <tr>
                 <td>Adedotun</td>
                 <td>Gdabedo</td>
                 <td>9/14/1943</td>
                 <!--link to specific info about prince-->
-                <td><i><b><a href ="NigerianPrinces.html" target ="_blank">Click Here</a></b></i></td>
+                <td><input type="radio" id="Gdabedo" name="princes" value="Gdabedo"></td>
             </tr>
             <tr>
-                <td style="border-color: black; border-width: 0;"></td>
                 <td style="border-color: black; border-width: 0;"></td>
                 <td style="border-color: black; border-width: 0;"></td>
                 <td>
                     <!--Button to return to home page-->
                     <a href="index.html">
-                        <button>Go Back</button>
+                        <button>Back</button>
                     </a>
+                </td>
+                <!--button to get card info-->
+                <td>
+                    <button onclick="getCardInfoPrinces()">Submit Choice</button>
                 </td>
             </tr>
         </table>

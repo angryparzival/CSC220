@@ -1,5 +1,5 @@
 /*Styling for the table info, headers, inputs, links and button*/
-td, th, input, a:link, a:visited, button{
+td, th, input, a:link, a:visited, button, select{
     color: rgb(31,194,14);
     /*background-color: rgb(78, 20, 177);*/
     background-color: rgb(0, 0, 0);
@@ -27,5 +27,8 @@ body{
 table{
     border-color: rgb(31,194,14);
     margin: 0 auto;
+}
+div{
+    font-size: 7px;
 }
 

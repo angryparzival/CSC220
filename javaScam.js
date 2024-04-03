@@ -1,5 +1,5 @@
-//gets card info from user
-function getCardInfo(){
+//function that gets card info 
+function getInfo(){
     //declare variables
     let cardNum;
     let charsGood;
@@ -41,7 +41,7 @@ function getCardInfo(){
             lengthGood = false;
         }
     }while(charsGood == false || lengthGood == false);
-    
+
     //loop to check if expiration date is correct length
     do{
         lengthGood = true;
@@ -51,7 +51,13 @@ function getCardInfo(){
             lengthGood = false;
         }
     }while(lengthGood == false);
+}
+
+
+//gets card info from user for specifically the mom subpages
+function getCardInfoMoms(){
     
+    getInfo();
     //pops up a confirmation box to check if user wants to continue
     checkCont = window.confirm("Press Ok if you would like to continue")
     //if they click Ok puts them to next page, if they click cancel closes box and nothing happens
@@ -61,11 +67,64 @@ function getCardInfo(){
 
 }
 
+//gets card info from user for princes page
+function getCardInfoPrinces(){
+    
+    //if statement to make sure at least one radio button is selected, if it isnt run this
+    if(document.getElementById('Adele').checked == false && document.getElementById('Achebe').checked == false && document.getElementById('Gdabedo').checked == false){
+        window.alert("Please Make A Selection first");
+    }
+    //if one radio button is selected
+    else{
+        //calls card information
+        getInfo();
+        //pops up a confirmation box to check if user wants to continue
+        checkCont = window.confirm("Press Ok if you would like to continue")
+        //if they click Ok puts them to next page, if they click cancel closes box and nothing happens
+        if(checkCont == true){
+            if(document.getElementById('Adele').checked) {
+                window.open("Error404.html", "_self")
+            }
+            else if(document.getElementById('Achebe').checked) {
+                window.open("Error404.html", "_self") 
+            }
+            else if(document.getElementById('Gdabedo').checked) {
+                window.open("Error404.html", "_self")
+            }
+        }
+    }
+}
+
+//gets card info from user for specifically the mom subpages
+function getCardInfoCruises(){
+    getInfo();
+    //pops up a confirmation box to check if user wants to continue
+    checkCont = window.confirm("Press Ok if you would like to continue")
+    //if they click Ok puts them to next page, if they click cancel closes box and nothing happens
+    if(checkCont == true){
+        window.open("Error404.html", "_self")
+    }
+
+}
+
+//gets card info from user for specifically the mom subpages
+function getCardInfoIRS(){
+    getInfo();
+    //pops up a confirmation box to check if user wants to continue
+    checkCont = window.confirm("Press Ok if you would like to continue")
+    //if they click Ok puts them to next page, if they click cancel closes box and nothing happens
+    if(checkCont == true){
+        window.open("Error404.html", "_self")
+    }
+
+}
+
 //functoin to display the the product is out of stock
 function displayOutOfStock(){
     alert("Sorry That Product Is Out Of Stock :(");
 }
 
+//function that "checks stock" and after .5 seconds runs function displayOutOfSTock
 function checkStock(){
     alert("Checking Stock......Press Ok To See Results");
     let timerID = setTimeout(displayOutOfStock, 500);

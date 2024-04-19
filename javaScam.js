@@ -112,9 +112,23 @@ function getCardInfoCruises(){
 
 }
 
+function checkIRSInfo(){
+    var reguExp = /^[A-Za-z]+$/;
+    let firstName = document.getElementById('firstName');
+    let lastName = document.getElementById('lastName');
+    let DOB = document.getElementById('DOB');
+    let owedAmount = document.getElementById('owedAmount');
+    if(firstName.value.match(reguExp)){
+        getInfo();
+    }
+    else if(firstName.value.match(reguExp) != true){
+        alert("You entered an invalid character in the the first name box");
+    }
+}
+
 //gets card info from user for specifically the mom subpages
 function getCardInfoIRS(){
-    getInfo();
+    checkIRSInfo();
     //pops up a confirmation box to check if user wants to continue
     checkCont = window.confirm("Press Ok if you would like to continue")
     //if they click Ok puts them to next page, if they click cancel closes box and nothing happens

@@ -32,3 +32,11 @@ div{
     font-size: 7px;
 }
 
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    background-color:rgb(31,194,14)
+}
+
+
+
+

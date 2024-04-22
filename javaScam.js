@@ -112,31 +112,28 @@ function getCardInfoCruises(){
 
 }
 
+//gets card info from user for specifically the IRS page
 function checkIRSInfo(){
-    var reguExp = /^[A-Za-z]+$/;
+    let reguExp = /^[A-Za-z]+$/;
     let firstName = document.getElementById('firstName');
     let lastName = document.getElementById('lastName');
     let DOB = document.getElementById('DOB');
     let owedAmount = document.getElementById('owedAmount');
-    if(firstName.value.match(reguExp)){
+    let SSN = document.getElementById("SSN");
+    if(firstName.value.match(reguExp) && lastName.value.match(reguExp) && SSN.value > 0 && SSN.value <= 9999){
         getInfo();
+        //pops up a confirmation box to check if user wants to continue
+        checkCont = window.confirm("Press Ok if you would like to continue")
+        //if they click Ok puts them to next page, if they click cancel closes box and nothing happens
+        if(checkCont == true){
+            window.open("Error404.html", "_self")
+        }
     }
-    else if(firstName.value.match(reguExp) != true){
-        alert("You entered an invalid character in the the first name box");
+    else{
+        alert("You entered an invalid input");
     }
 }
 
-//gets card info from user for specifically the mom subpages
-function getCardInfoIRS(){
-    checkIRSInfo();
-    //pops up a confirmation box to check if user wants to continue
-    checkCont = window.confirm("Press Ok if you would like to continue")
-    //if they click Ok puts them to next page, if they click cancel closes box and nothing happens
-    if(checkCont == true){
-        window.open("Error404.html", "_self")
-    }
-
-}
 
 //functoin to display the the product is out of stock
 function displayOutOfStock(){

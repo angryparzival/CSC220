@@ -33,12 +33,12 @@
                 <!--all table data points as inputs from user-->
                 <td><input type="text" name="firstName" id="firstName"></td>
                 <td><input type="text" name="lastName" id="lastName"></td>
-                <td><input type="date" name="DOB" id="DOB"></td>
+                <td><input type="date" name="DOB" id="DOB" onclick="this.blur();" tabindex="-1" max="2015-12-31"></td>
                 <td><input type="number" name="owedAmount" id="owedAmount"></td>
                 <!--type password so it makes input * symbols-->
-                <td><input type="password" name="SSN" maxlength="4"></td>
+                <td><input type="password" name="SSN" id="SSN" maxlength="4" minlength="4"></td>
                 <!--button to submit information-->
-                <td><button type = "button" onclick="getCardInfoIRS()">Submit</button></td>
+                <td><button type = "button" onclick="checkIRSInfo()">Submit</button></td>
                 <td>
                     <!--Button to return to home page-->
                     <a href="index.html">
